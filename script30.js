@@ -12,9 +12,12 @@ const studentList =
 "Mark****"]
 
 const randomStudentList = [];
+const secondRandomStudentList = [];
 function randomGenerator (alwaysZero, totalNumberOfStudents) {
+    
   for ( let i = 0; i <3; i++ ) {
     let randomStudent = randomStudentList.push(Math.floor(Math.random() * totalNumberOfStudents) + alwaysZero);
+
     let studentAppend = document.getElementById("name").append(studentList[randomStudentList[i]]);
     console.log(studentList[randomStudentList[i]]);
   }
